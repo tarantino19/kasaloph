@@ -1,13 +1,13 @@
 import type { Route } from './+types/home';
 
 export function meta({}: Route.MetaArgs) {
-	return [{ title: 'New React Router App' }, { name: 'description', content: 'Welcome to React Router!' }];
+	return [{ title: 'Kasal Kasali Kasalo' }, { name: 'description', content: 'A wedding directory' }];
 }
 
-export default function Home({ loaderData }: Route.ComponentProps) {
+export default function Home({}: Route.ComponentProps) {
 	return (
 		<>
-			<b>Hello World</b>
+			<h1 className='text-md font-medium'>Handa Ka Na Bang Makisalo?</h1>
 		</>
 	);
 }

@@ -4,9 +4,18 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+	@apply bg-white dark:bg-gray-950;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+	width: 90%; /* Body width is 70% of the viewport */
+	min-height: 100vh; /* Ensure full viewport height */
+	margin: 0 auto; /* Center the body horizontally */
+	display: flex;
+	flex-direction: column;
+}
+
+@media (prefers-color-scheme: dark) {
+	html,
+	body {
+		color-scheme: dark;
+	}
 }
