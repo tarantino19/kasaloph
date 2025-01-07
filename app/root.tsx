@@ -40,7 +40,7 @@ export default function App() {
 	return (
 		<div>
 			<div className='text-xl p-4 w-full md:w-[calc(100%-4rem)] bg-primary flex justify-between items-center mx-8 font-bold'>
-				<h1>Kasal Kasali Kasalo</h1>
+				<img src='/logo.png' alt='' />
 			</div>
 			<nav className='text-md p-4 w-full md:w-[calc(100%-4rem)] bg-primary flex justify-between items-center mx-8'>
 				<ul className='flex md:flex-row flex-col space-x-4 md:space-x-4 text-xl md:text-lg'>
@@ -109,6 +109,10 @@ export default function App() {
 							<span className='absolute bottom-[-4px] left-0 w-0 h-1 bg-gray-600 transition-all duration-300 group-hover:w-full'></span>
 						</NavLink>
 					</li>
+				</ul>
+
+				{/* Login and Profile Links */}
+				<ul className='flex md:flex-row flex-col space-x-4 md:space-x-4 text-xl md:text-lg'>
 					<li className='group'>
 						<button className='text-lg md:text-lg'>
 							<NavLink
@@ -127,28 +131,6 @@ export default function App() {
 								className='relative inline-block text-gray-300 hover:text-gray-600 transition-all duration-300'
 							>
 								Vendor Log In
-								<span className='absolute bottom-[-4px] left-0 w-0 h-1 bg-gray-600 transition-all duration-300 group-hover:w-full'></span>
-							</NavLink>
-						</button>
-					</li>
-					<li className='group'>
-						<button className='text-lg md:text-lg'>
-							<NavLink
-								to='/user-login'
-								className='relative inline-block text-gray-300 hover:text-gray-600 transition-all duration-300'
-							>
-								User Profile
-								<span className='absolute bottom-[-4px] left-0 w-0 h-1 bg-gray-600 transition-all duration-300 group-hover:w-full'></span>
-							</NavLink>
-						</button>
-					</li>
-					<li className='group'>
-						<button className='text-lg md:text-lg'>
-							<NavLink
-								to='/user-login'
-								className='relative inline-block text-gray-300 hover:text-gray-600 transition-all duration-300'
-							>
-								Vendor Profile
 								<span className='absolute bottom-[-4px] left-0 w-0 h-1 bg-gray-600 transition-all duration-300 group-hover:w-full'></span>
 							</NavLink>
 						</button>
